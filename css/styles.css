@@ -107,7 +107,7 @@ body {
   align-items: center;
 }
 
-.logo {
+.header-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -116,6 +116,7 @@ body {
   text-transform: uppercase;
   color: var(--iris);
   margin-right: 76px;
+  display: inline-block;
 }
 
 .studio-logo {
@@ -164,9 +165,10 @@ body {
   color: #404bbf;
 }
 
-.hero {
+.hero-section {
   background-color: var(--navy-blue);
   margin-bottom: 60px;
+  padding: 188px 0;
 }
 
 .hero-div {
@@ -187,6 +189,7 @@ body {
   letter-spacing: 0.02em;
   color: #ffffff;
   text-align: center;
+  max-width: 496px;
 }
 
 .hero-button {
@@ -201,6 +204,7 @@ body {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  min-width: 169px;
 }
 
 .hero-button:hover,
@@ -208,9 +212,17 @@ body {
   background-color: #404bbf;
 }
 
+.benefits-section {
+  padding: 120px 0;
+}
+
 .benefits-list {
   display: flex;
-  gap: 20px;
+  gap: 24px;
+}
+
+.benefits-list-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .sub-title {
@@ -229,6 +241,10 @@ body {
   color: var(--slate);
 }
 
+.products-section {
+  padding-bottom: 120px;
+}
+
 .products-title {
   font-size: 36px;
   line-height: 1.11;
@@ -244,10 +260,24 @@ body {
   gap: 24px;
 }
 
+.products-list-item {
+  width: calc((100% - 48px) / 3);
+}
+
 .team {
   background-color: var(--cloud);
   margin-top: 60;
   padding: 120px 0;
+}
+
+.team-card {
+  background-color: var(--white);
+  border-radius: 0 0 4px 4px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-title {
@@ -258,15 +288,6 @@ body {
   text-transform: capitalize;
   color: var(--navy-blue);
   margin-bottom: 72px;
-}
-
-.team-list {
-  display: flex;
-  gap: 24px;
-}
-
-.team-card {
-  background-color: var(--white);
 }
 
 .team-card-text {
@@ -286,6 +307,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--navy-blue);
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .team-card-dscr {
@@ -293,21 +315,22 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
+  text-align: center;
 }
 
-.name {
-  font-weight: 500;
+.portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
-.products-filter-list {
+.portfolio-filter-list {
   display: flex;
   gap: 24px;
   justify-content: center;
-  margin-top: 96px;
   margin-bottom: 72px;
 }
 
-.filter {
+.portfolio-filter-list-item {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -321,6 +344,11 @@ body {
   padding: 12px 24px;
 }
 
+.portfolio-filter-list-item:hover,
+.portfolio-filter-list-item:focus {
+  border: 1px solid transparent;
+}
+
 .filter:hover {
   color: #ffffff;
   background-color: #404bbf;
@@ -331,34 +359,47 @@ body {
   background-color: #404bbf;
 }
 
-.product-card-list {
+.portfolio-card-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  margin-bottom: 120px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
-.product-card-item {
+.portfolio-card-item {
   width: calc((100% - 24px * 2) / 3);
 }
 
-.product-card-item-text {
+.portfolio-card-item-text {
   display: flex;
   flex-direction: column;
   gap: 8;
   padding: 32px 16px;
   border: 1px solid var(--cornflower);
+  border-top: none;
 }
 
 .footer {
   background-color: var(--navy-blue);
+  padding: 100px 0;
 }
 
 .footer-container {
   display: flex;
   flex-direction: column;
-  padding: 100px 0;
-  gap: 17.5px;
+}
+
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+  margin-right: 76px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .studio-logo-footer {
