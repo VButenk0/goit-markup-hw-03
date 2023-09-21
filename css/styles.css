@@ -346,17 +346,9 @@ body {
 
 .portfolio-filter-list-item:hover,
 .portfolio-filter-list-item:focus {
+  color: #ffffff;
+  background-color: #404bbf;
   border: 1px solid transparent;
-}
-
-.filter:hover {
-  color: #ffffff;
-  background-color: #404bbf;
-}
-
-.filter:focus {
-  color: #ffffff;
-  background-color: #404bbf;
 }
 
 .portfolio-card-list {
@@ -390,6 +382,7 @@ body {
 }
 
 .footer-logo {
+  display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -398,7 +391,6 @@ body {
   text-transform: uppercase;
   color: var(--iris);
   margin-right: 76px;
-  display: inline-block;
   margin-bottom: 16px;
 }
 
